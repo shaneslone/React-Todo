@@ -7,7 +7,14 @@ import Todo from './Todo';
 export default class TodoList extends Component {
   render() {
     return this.props.todoList.map(todo => {
-      return <Todo task={todo.task} />;
+      return (
+        <Todo
+          task={todo.task}
+          id={todo.id}
+          completed={todo.completed}
+          handleCompletedTodo={this.props.handleCompletedTodo}
+        />
+      );
     });
   }
 }
