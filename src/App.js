@@ -2,7 +2,6 @@ import React from 'react';
 import TodoList from './components/TodoList';
 import TodoForm from './components/TodoForm';
 import styled, { createGlobalStyle } from 'styled-components';
-// import './App.css';
 
 const GlobalStyle = createGlobalStyle`
 body{
